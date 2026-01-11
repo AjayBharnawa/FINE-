@@ -1,28 +1,47 @@
-import logo from "../../assets/logo.png";
-
 const Navbar = () => {
   return (
-    <div className="w-full h-[80px] bg-white flex items-center justify-between px-12">
+    <nav className="w-full h-[85px] bg-[#0a1a3a] flex items-center px-15">
       
-        <div className="flex items-center gap-3">
-             <img src={logo} className="w-10 h-10 rounded-full" />
-            <h1 className="text-3xl md:text-4xl font-extrabold tracking-widest text-white cursor-pointer">
-            <span className="text-green-400">FINE</span>
-            </h1>        
+      <h1
+        className="text-3xl md:text-4xl font-extrabold tracking-widest
+        bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent
+        cursor-pointer"
+      >
+        FINE
+      </h1>
+
+      <div className="ml-auto flex items-center gap-8">
+        
+        <div className="flex gap-6">
+          <a
+            href="/"
+            className="text-white text-lg font-medium hover:text-cyan-300 transition"
+          >
+            Home
+          </a>
+          <a
+            href="/about"
+            className="text-white text-lg font-medium hover:text-cyan-300 transition"
+          >
+            About
+          </a>
+          <a
+            href="/signin"
+            className="text-white text-lg font-medium hover:text-cyan-300 transition"
+          >
+            Sign In
+          </a>
         </div>
 
-        <div className="">
-            <a href="">About</a>
-            <a href="">Domains</a>
-            <a href="">Projects</a>
+        <button
+          className="bg-white text-[#0a1a3a] px-6 py-2.5 rounded-lg
+          font-semibold hover:bg-cyan-300 transition duration-300"
+        >
+          Sign Up
+        </button>
+      </div>
 
-        </div>
-
-        
-
-        
-
-    </div>
+    </nav>
   );
 };
 
